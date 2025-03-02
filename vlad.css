@@ -1,0 +1,427 @@
+/* navbar */
+.navbar {
+  position: relative;
+  z-index: 1; /* чтобы текст был поверх видео */
+  font-family: Nosifer;
+  color: rgb(255, 0, 0);
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняем весь контейнер */
+  z-index: -1; /* Видео будет находиться под содержимым */
+}
+.nav-link {
+  font-weight: 950;
+  font-style: italic;
+}
+
+/* видео фон */
+.video-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: scale(1.48);
+}
+
+/* фотка центр*/
+.image_1 {
+  position: absolute;
+  width: 23%;
+  left: 38.6%;
+  top: 15%;
+  border-radius: 60%;
+  box-shadow: 0 0 110px rgb(0, 26, 255);
+  transition: transform 1.2s ease, box-shadow 1.2s ease;
+  margin-bottom: 3.5em;
+}
+/* анимации фото  */
+.image_1:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+@media only screen and (max-width: 400px) {
+  .image_1 {
+    width: 300px;
+    height: 300px;
+    left: 12%;
+  }
+}
+
+/* курсор */
+.custom-cursor {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  pointer-events: none; /* Чтобы элемент не мешал кликам */
+  background: url("ezgif-5-e95d97dfcb.gif") no-repeat center center;
+  background-size: contain; /* Подгоняем размер */
+  z-index: 9999;
+  display: block;
+}
+body {
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* края */
+.image_banner_giga {
+  position: absolute;
+  width: 526.5px;
+  margin-top: 6.7%;
+  margin-left: -59.25%;
+  transform: rotate(-90deg);
+}
+.image_banner_giga1 {
+  position: absolute;
+  width: 526.5px;
+  margin-top: 34.4%;
+  margin-left: -59.25%;
+  transform: rotate(-90deg);
+}
+.image_banner_giga2 {
+  position: absolute;
+  width: 528px;
+  margin-top: 6.7%;
+  margin-left: 31.4%;
+  transform: rotate(90deg);
+}
+.image_banner_giga3 {
+  position: absolute;
+  width: 528px;
+  margin-top: 34.4%;
+  margin-left: 31.4%;
+  transform: rotate(90deg);
+}
+.image_banner_giga4 {
+  position: absolute;
+  width: 528px;
+  margin-top: 62.1%;
+  margin-left: 31.4%;
+  transform: rotate(90deg);
+}
+.image_banner_giga5 {
+  position: absolute;
+  width: 526.5px;
+  margin-top: 62.1%;
+  margin-left: -59.25%;
+  transform: rotate(90deg);
+}
+.image_banner_giga6 {
+  position: absolute;
+  width: 528px;
+  margin-top: 89.7%;
+  margin-left: 31.4%;
+  transform: rotate(90deg);
+}
+.image_banner_giga7 {
+  position: absolute;
+  width: 526.5px;
+  margin-top: 89.7%;
+  margin-left: -59.25%;
+  transform: rotate(90deg);
+}
+
+/* кнопки */
+.gif-button_1 {
+  margin-left: 14%;
+  margin-top: 70%;
+  width: 17%;
+  height: 14%;
+  border: none;
+  border-radius: 15%;
+  background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
+  background-size: cover; /* Масштабируем GIF по размеру кнопки */
+  font-size: 75%;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Nosifer;
+  color: rgb(0, 26, 255);
+}
+
+.gif-button_1:hover {
+  transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+}
+
+.gif-button_1:active {
+  transform: scale(0.95); /* Эффект уменьшения при нажатии */
+}
+
+.gif-button_2 {
+  margin-left: 69%;
+  margin-top: -18.2%;
+  width: 17%;
+  height: 14%;
+  border: none;
+  border-radius: 15%;
+  background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
+  background-size: cover; /* Масштабируем GIF по размеру кнопки */
+  font-size: 125%;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Nosifer;
+  color: rgb(255, 0, 0);
+}
+.gif-button_2:hover {
+  transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+}
+
+.gif-button_2:active {
+  transform: scale(0.95); /* Эффект уменьшения при нажатии */
+}
+
+/* музыка */
+.music-control {
+  margin-left: 139%;
+  margin-top: -176%;
+  width: 12%;
+  height: 12%;
+  cursor: pointer;
+}
+
+.text_1 {
+  position: absolute;
+  top: 90%;
+  left: 28%;
+  font-size: 125%;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  animation: glowice12 1.5s infinite alternate;
+  margin: 0 auto; /* Центрирует колонку на странице */
+  line-height: 1.5; /* Устанавливает интерлиньяж для удобства чтения */
+  max-width: 80%;
+}
+@keyframes glowice12 {
+  0% {
+    text-shadow: 0 0 5px #a6cfff, 0 0 10px #80d4ff, 0 0 15px #3a88e8;
+  }
+  50% {
+    text-shadow: 0 0 10px #5fa7e9, 0 0 20px #7ac7ff, 0 0 30px #379de6;
+  }
+  100% {
+    text-shadow: 0 0 20px #4a8bd2, 0 0 40px #2894e6, 0 0 50px #186cb2;
+  }
+}
+
+.marquee-wrapper {
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background: none;
+  white-space: nowrap;
+  align-items: center;
+  animation: scroll 25s linear infinite;
+  display: flex;
+  top: 106%;
+  z-index: 0.1;
+}
+.marquee-content img {
+  width: 70px;
+  height: 73px;
+  margin: 50px;
+  border-radius: 60%;
+}
+.M_text {
+  font-weight: 700;
+  color: rgb(174, 0, 255);
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    color: #ff8800;
+  }
+  33% {
+    color: #ff0033;
+  }
+  66% {
+    color: #9900ff;
+  }
+  100% {
+    color: #ff8800;
+  }
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.black-bar1 {
+  top: 59%;
+  left: -50%;
+  width: 150%;
+  height: 122.2%;
+  background-color: black;
+  position: absolute;
+  transform: translateY(430px);
+  z-index: -1;
+}
+
+/* вторая стрница */
+.slime-container {
+  position: relative;
+  display: inline-block;
+  top: 60%;
+  left: 50%;
+  z-index: 25;
+}
+
+.slime-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 80%;
+  transition: filter 0.4s ease-out;
+  filter: url(#displacementFilter);
+  width: 63%;
+  box-shadow: 0 0 110px rgb(0, 26, 255);
+}
+
+/* тест */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateY(-140px);
+  font-family: Kalnia Glaze;
+  font-size: 280%;
+}
+
+.text-wrapper {
+  margin-left: -45%;
+  margin-top: -10%;
+  width: 80%;
+}
+
+/* Класс для анимации */
+.slide-in {
+  animation: slideDown 3s forwards;
+}
+
+.word-container {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0; /* Скрыть контейнер по умолчанию */
+  transition: opacity 5s;
+  margin-top: -100%;
+  margin-left: 62%;
+  font-family: Nosifer;
+  color: #ff0033;
+  animation: fall 1s linear infinite;
+}
+
+/* Буквы по умолчанию */
+.letter {
+  opacity: 0;
+  transform: rotateY(90deg); /* Начальная позиция — скрытые буквы */
+  animation: moveLetter 6s ease-in-out forwards;
+}
+
+/* Анимация для каждой буквы */
+@keyframes moveLetter {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/* Плавное движение в стороны */
+.letter:nth-child(odd) {
+  animation-name: moveLetterLeft;
+}
+
+.letter:nth-child(even) {
+  animation-name: moveLetterRight;
+}
+
+@keyframes moveLetterLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) rotateY(90deg);
+  }
+  50% {
+    opacity: 10;
+    transform: translateX(0) rotateY(0);
+  }
+  100% {
+    opacity: 10;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+@keyframes moveLetterRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) rotateY(90deg);
+  }
+  50% {
+    opacity: 10;
+    transform: translateX(0) rotateY(0);
+  }
+  100% {
+    opacity: 10;
+    transform: translateX(0) rotateY(0);
+  }
+}
+/*  */
+.drop {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  animation: drop-animation 2s infinite;
+  z-index: 20;
+}
+
+@keyframes drop-animation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh); /* Капля опускается до низу */
+  }
+}
